@@ -1,0 +1,169 @@
+$pink1: #deb0c7;
+$black1: #212529;
+$blue1: #0d6efd;
+$green1: #198754;
+$pinky1:  rgb(255, 222, 227);
+
+$ancho1: 768px;
+$ancho2: 480px;
+$ancho3: 200px;
+$ancho4: 360px;
+$ancho5: 163px;
+
+$font1: 'Roboto', sans-serif;
+$font2: Arial;
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+
+body {
+background-image: linear-gradient($pink1, $pinky1);
+}
+.navbar-brand:hover {
+    background-color: $pink1;
+    transform: scale(1);
+}
+
+#carouselExampleCaptions {
+    margin: 80px;
+    height: auto;
+    width: auto;
+    padding: 20px 50px 20px 50px;
+    }
+
+
+#socialWall{
+    
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+
+
+@media only screen and (max-width: $ancho1)
+{
+    #socialWall{
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (2, 1fr);}
+
+    #carouselExampleCaptions {
+            margin:auto;
+            width: auto;
+            height: auto;
+            padding: auto;
+            padding-top: 20px;
+        }
+}
+
+@media only screen and (max-width: $ancho2)
+{
+    #socialWall{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);}
+    
+        #carouselExampleCaptions {
+        margin:auto;
+        width: auto;
+        height: auto;
+        padding: auto;
+        padding-top: 60px;
+    }
+    }
+
+
+section {
+    h2 {
+    margin-left: 2px;
+    font-family: $font1;
+    color: $black1;
+    line-height: 2;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 50px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;}
+        100% {
+            opacity: 1;}
+    }
+}
+}
+
+.Social {
+    display: flex;
+    padding: 50px;
+    padding-top: 80px;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    background-image: linear-gradient(rgb(235, 235, 235), rgb(228, 228, 228));
+}
+
+.iconos {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    padding: 20px;
+    background-image: linear-gradient($pink1, $pinky1);
+}
+
+.iconos1 {
+    box-shadow: 0 4px 8px 0 pink;
+    transition: 0.3s;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+}
+
+.iconos2 {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 300px;
+        padding: 20px;
+        background-image: linear-gradient($pink1, $pinky1);
+}
+
+.comentarios {
+    display: flex;
+    padding: 50px;
+    padding-top: 80px;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+
+}
+footer {
+        padding-top: 20px;
+        margin-left: 2px;
+        font-family: $font1;
+        background-image: linear-gradient(to left, grey , rgb(211, 211, 211));
+        color: $black1;
+        line-height: 2;
+        font-weight: 20;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-bottom: 5px;
+        }
+
+@import  "_reservas.scss";
+@import  "_cursos.scss";
+@import  "_servicios.scss";
+@import  "_variables.scss";
+@import  "_nosotros.scss";

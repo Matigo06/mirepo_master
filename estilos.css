@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#deb0c7), to(#ffdee3));
+  background-image: linear-gradient(#deb0c7, #ffdee3);
+}
+
+.navbar-brand:hover {
+  background-color: #deb0c7;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#carouselExampleCaptions {
+  margin: 80px;
+  height: auto;
+  width: auto;
+  padding: 20px 50px 20px 50px;
+}
+
+#socialWall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #socialWall {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat 2, 1fr;
+        grid-template-columns: repeat 2, 1fr;
+    -ms-grid-rows: repeat 2, 1fr;
+        grid-template-rows: repeat 2, 1fr;
+  }
+  #carouselExampleCaptions {
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: auto;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #socialWall {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #carouselExampleCaptions {
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: auto;
+    padding-top: 60px;
+  }
+}
+
+section h2 {
+  margin-left: 2px;
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+  line-height: 2;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: 50px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  padding-top: 80px;
+  width: auto;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#e4e4e4));
+  background-image: linear-gradient(#ebebeb, #e4e4e4);
+}
+
+.iconos {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 300px;
+  padding: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#deb0c7), to(#ffdee3));
+  background-image: linear-gradient(#deb0c7, #ffdee3);
+}
+
+.iconos1 {
+  -webkit-box-shadow: 0 4px 8px 0 pink;
+          box-shadow: 0 4px 8px 0 pink;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+}
+
+.iconos2 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 300px;
+  padding: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#deb0c7), to(#ffdee3));
+  background-image: linear-gradient(#deb0c7, #ffdee3);
+}
+
+.comentarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  padding-top: 80px;
+  width: auto;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  padding-top: 20px;
+  margin-left: 2px;
+  font-family: "Roboto", sans-serif;
+  background-image: -webkit-gradient(linear, right top, left top, from(grey), to(lightgray));
+  background-image: linear-gradient(to left, grey, lightgray);
+  color: #212529;
+  line-height: 2;
+  font-weight: 20;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/* Reservas */
+.calendar {
+  display: -ms-grid;
+  display: grid;
+  margin: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario {
+  margin: 20px;
+  width: auto;
+  height: auto;
+  padding: 50px;
+}
+
+.tabla {
+  width: auto;
+  height: auto;
+  padding: 50px;
+}
+
+.mapa {
+  margin: 5px 20px 20px 20px;
+  width: auto;
+  height: auto;
+  padding: 5px 50px 50px 50px;
+}
+
+.descripcion__parrafo--center {
+  font-family: Arial;
+  font-size: 18px;
+  text-align: center;
+}
+
+.fotoscurso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+p {
+  padding: 40px;
+}
+
+h2 {
+  padding-top: 0;
+}
+
+.Acordeon {
+  margin: 20px;
+  width: auto;
+  height: auto;
+  padding: 50px;
+}
+
+.cards1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  padding: 80px;
+  padding-top: 60px;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.acordeonpoliticas {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#e4e4e4));
+  background-image: linear-gradient(#ebebeb, #e4e4e4);
+}
+
+#accordionFlushExample {
+  padding: 20px 80px 80px 80px;
+  margin: 80px;
+}
+
+.descripcion__titulo {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.descripcion__parrafo {
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  padding-top: 80px;
+  width: auto;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 300px;
+  padding: 20px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+/*# sourceMappingURL=estilos.css.map */

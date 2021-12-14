@@ -1,0 +1,33 @@
+
+/* Reservas */
+.calendar {
+    display: grid;
+    margin: 50px;
+    justify-content: center;
+}
+
+.formulario {
+    margin: 20px;
+    width: auto;
+    height: auto;
+    padding: 50px;
+}
+
+.tabla {
+    width: auto;
+    height: auto;
+    padding: 50px;
+}
+
+.mapa {
+    margin: 5px 20px 20px 20px;
+    width: auto;
+    height: auto;
+    padding: 5px 50px 50px 50px;
+}
+
+.descripcion__parrafo--center {
+    font-family: $font2;
+    font-size: 18px;
+    text-align: center;
+}
